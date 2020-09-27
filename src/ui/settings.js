@@ -23,7 +23,6 @@ const refreshStashTabs = async () => {
       <button
         class="d-flex align-items-center justify-content-left btn btn-${isSelected ? 'success' : 'primary'} btn-block"
         data-id="${stashTab.id}"
-        ${!stashTab.isValid && 'disabled'}
       >
         <div class="stash-color" style="background-color: ${stashTab.colorCss}"></div>
         ${stashTab.name}
